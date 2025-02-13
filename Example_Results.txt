@@ -1,0 +1,378 @@
+----------------------------------- Small Dataset -----------------------------------
+
+---------------- Shared memory version ----------------
+
+--------------- Exact KNN (parallel) ---------------
+
+Num. batch: 1, batch size: 100 queries per batch
+GPU available memory: 7083.00 MB, Total: 8187.50 MB, In use: 1104.50 MB
+
+Launching kernels...
+
+Processing batch 1 (100 queries)...
+Time required to compute distances: 0 minutes, 0 seconds, and 82 milliseconds
+Time required to find the KNN: 0 minutes, 0 seconds, and 319 milliseconds
+
+Cleaning GPU memory...
+
+Comparing with groundtruth...
+Test accuracy exact KNN (parallel): 100%
+
+Time required to compute distances: 0 minutes, 0 seconds, and 82 milliseconds
+Time required to find the KNN: 0 minutes, 0 seconds, and 319 milliseconds
+Time required to transfer data: 0 minutes, 0 seconds, and 97 milliseconds
+
+--------------- Exact KNN (sequential) ---------------
+Searching...
+
+Comparing with groundtruth...
+Test accuracy exact KNN (sequential): 100%
+
+Time required to compute distances: 0 minutes, 0 seconds, and 74 milliseconds
+Time required to find the KNN: 0 minutes, 0 seconds, and 87 milliseconds
+
+Exact KNN execution time (sequential): 0 minutes, 0 seconds, and 161 milliseconds
+Exact KNN execution time (parallel): 0 minutes, 2 seconds, and 167 milliseconds
+
+Compute distances Speedup: 0.900368
+Find KNN Speedup: 0.273737
+Total Speedup: 0.0745501
+
+---------------- Atomic version ----------------
+
+--------------- Exact KNN (parallel) ---------------
+
+Num. batch: 1, batch size: 100 queries per batch
+GPU available memory: 7083.00 MB, Total: 8187.50 MB, In use: 1104.50 MB
+
+Launching kernels...
+
+Processing batch 1 (100 queries)...
+Time required to compute distances: 0 minutes, 0 seconds, and 51 milliseconds
+Time required to find the KNN: 0 minutes, 0 seconds, and 301 milliseconds
+
+Cleaning GPU memory...
+
+Comparing with groundtruth...
+Test accuracy exact KNN (parallel): 100%
+
+Time required to compute distances: 0 minutes, 0 seconds, and 51 milliseconds
+Time required to find the KNN: 0 minutes, 0 seconds, and 301 milliseconds
+Time required to transfer data: 0 minutes, 0 seconds, and 71 milliseconds
+
+--------------- Exact KNN (sequential) ---------------
+Searching...
+
+Comparing with groundtruth...
+Test accuracy exact KNN (sequential): 100%
+
+Time required to compute distances: 0 minutes, 0 seconds, and 65 milliseconds
+Time required to find the KNN: 0 minutes, 0 seconds, and 79 milliseconds
+
+Exact KNN execution time (sequential): 0 minutes, 0 seconds, and 145 milliseconds
+Exact KNN execution time (parallel): 0 minutes, 2 seconds, and 61 milliseconds
+
+Compute distances Speedup: 1.29028
+Find KNN Speedup: 0.263457
+Total Speedup: 0.070398
+
+---------------- One vector per thread version ----------------
+
+--------------- Exact KNN (parallel) ---------------
+
+Num. batch: 1, batch size: 100 queries per batch
+GPU available memory: 7083.00 MB, Total: 8187.50 MB, In use: 1104.50 MB
+
+Launching kernels...
+
+Processing batch 1 (100 queries)...
+Time required to compute distances: 0 minutes, 0 seconds, and 7 milliseconds
+Time required to find the KNN: 0 minutes, 0 seconds, and 299 milliseconds
+
+Cleaning GPU memory...
+
+Comparing with groundtruth...
+Test accuracy exact KNN (parallel): 100%
+
+Time required to compute distances: 0 minutes, 0 seconds, and 7 milliseconds
+Time required to find the KNN: 0 minutes, 0 seconds, and 299 milliseconds
+Time required to transfer data: 0 minutes, 0 seconds, and 69 milliseconds
+
+--------------- Exact KNN (sequential) ---------------
+Searching...
+
+Comparing with groundtruth...
+Test accuracy exact KNN (sequential): 100%
+
+Time required to compute distances: 0 minutes, 0 seconds, and 66 milliseconds
+Time required to find the KNN: 0 minutes, 0 seconds, and 77 milliseconds
+
+Exact KNN execution time (sequential): 0 minutes, 0 seconds, and 144 milliseconds
+Exact KNN execution time (parallel): 0 minutes, 2 seconds, and 34 milliseconds
+
+Compute distances Speedup: 9.3664
+Find KNN Speedup: 0.260274
+Total Speedup: 0.0710595
+
+----------------------------------- Medium Dataset -----------------------------------
+
+---------------- Shared memory version ----------------
+
+--------------- Exact KNN (parallel) ---------------
+
+Num. batch: 2, batch size: 2882 queries per batch
+GPU available memory: 347.00 MB, Total: 8187.50 MB, In use: 7840.50 MB
+
+Launching kernels...
+
+Processing batch 1 (2882 queries)...
+Time required to compute distances: 0 minutes, 50 seconds, and 737 milliseconds
+Time required to find the KNN: 0 minutes, 32 seconds, and 468 milliseconds
+
+Processing batch 2 (2118 queries)...
+Time required to compute distances: 0 minutes, 37 seconds, and 135 milliseconds
+Time required to find the KNN: 0 minutes, 23 seconds, and 945 milliseconds
+
+Cleaning GPU memory...
+
+Time required to compute distances: 1 minutes, 27 seconds, and 873 milliseconds
+Time required to find the KNN: 0 minutes, 56 seconds, and 413 milliseconds
+Time required to transfer data: 0 minutes, 0 seconds, and 550 milliseconds
+
+--------------- Exact KNN (sequential) ---------------
+Searching...
+
+Time required to compute distances: 2 minutes, 5 seconds, and 822 milliseconds
+Time required to find the KNN: 2 minutes, 19 seconds, and 7 milliseconds
+
+Precision beetween sequential and parallel version: 100%
+
+Exact KNN execution time (sequential): 4 minutes, 24 seconds, and 830 milliseconds
+Exact KNN execution time (parallel): 2 minutes, 26 seconds, and 150 milliseconds
+
+Compute distances Speedup: 1.43186
+Find KNN Speedup: 2.46408
+Total Speedup: 1.81204
+
+---------------- Atomic version ----------------
+
+--------------- Exact KNN (parallel) ---------------
+
+Num. batch: 2, batch size: 2882 queries per batch
+GPU available memory: 347.00 MB, Total: 8187.50 MB, In use: 7840.50 MB
+
+Launching kernels...
+
+Processing batch 1 (2882 queries)...
+Time required to compute distances: 0 minutes, 39 seconds, and 594 milliseconds
+Time required to find the KNN: 0 minutes, 32 seconds, and 533 milliseconds
+
+Processing batch 2 (2118 queries)...
+Time required to compute distances: 0 minutes, 28 seconds, and 947 milliseconds
+Time required to find the KNN: 0 minutes, 23 seconds, and 701 milliseconds
+
+Cleaning GPU memory...
+
+Time required to compute distances: 1 minutes, 8 seconds, and 541 milliseconds
+Time required to find the KNN: 0 minutes, 56 seconds, and 234 milliseconds
+Time required to transfer data: 0 minutes, 0 seconds, and 541 milliseconds
+
+--------------- Exact KNN (sequential) ---------------
+Searching...
+
+Time required to compute distances: 2 minutes, 4 seconds, and 273 milliseconds
+Time required to find the KNN: 2 minutes, 18 seconds, and 239 milliseconds
+
+Precision beetween sequential and parallel version: 66.0772%
+
+Exact KNN execution time (sequential): 4 minutes, 22 seconds, and 512 milliseconds
+Exact KNN execution time (parallel): 2 minutes, 6 seconds, and 612 milliseconds
+
+Compute distances Speedup: 1.81312
+Find KNN Speedup: 2.45825
+Total Speedup: 2.07336
+
+---------------- One vector per thread version ----------------
+
+--------------- Exact KNN (parallel) ---------------
+
+Num. batch: 2, batch size: 2882 queries per batch
+GPU available memory: 347.00 MB, Total: 8187.50 MB, In use: 7840.50 MB
+
+Launching kernels...
+
+Processing batch 1 (2882 queries)...
+Time required to compute distances: 0 minutes, 4 seconds, and 737 milliseconds
+Time required to find the KNN: 0 minutes, 32 seconds, and 355 milliseconds
+
+Processing batch 2 (2118 queries)...
+Time required to compute distances: 0 minutes, 3 seconds, and 433 milliseconds
+Time required to find the KNN: 0 minutes, 23 seconds, and 818 milliseconds
+
+Cleaning GPU memory...
+
+Time required to compute distances: 0 minutes, 8 seconds, and 171 milliseconds
+Time required to find the KNN: 0 minutes, 56 seconds, and 173 milliseconds
+Time required to transfer data: 0 minutes, 0 seconds, and 562 milliseconds
+
+--------------- Exact KNN (sequential) ---------------
+Searching...
+
+Time required to compute distances: 2 minutes, 4 seconds, and 40 milliseconds
+Time required to find the KNN: 2 minutes, 18 seconds, and 367 milliseconds
+
+Precision beetween sequential and parallel version: 100%
+
+Exact KNN execution time (sequential): 4 minutes, 22 seconds, and 408 milliseconds
+Exact KNN execution time (parallel): 1 minutes, 6 seconds, and 180 milliseconds
+
+Compute distances Speedup: 15.1795
+Find KNN Speedup: 2.46323
+Total Speedup: 3.96504
+
+----------------------------------- Big Dataset -----------------------------------
+
+---------------- Shared memory version ----------------
+
+--------------- Exact KNN (parallel) ---------------
+
+Num. batch: 13, batch size: 821 queries per batch
+GPU available memory: 337.00 MB, Total: 8187.50 MB, In use: 7850.50 MB
+
+Launching kernels...
+
+Processing batch 1 (821 queries)...
+Time required to compute distances: 0 minutes, 48 seconds, and 184 milliseconds
+Time required to find the KNN: 0 minutes, 27 seconds, and 814 milliseconds
+
+...
+
+Processing batch 12 (821 queries)...
+Time required to compute distances: 0 minutes, 47 seconds, and 979 milliseconds
+Time required to find the KNN: 0 minutes, 28 seconds, and 87 milliseconds
+
+Processing batch 13 (148 queries)...
+Time required to compute distances: 0 minutes, 8 seconds, and 651 milliseconds
+Time required to find the KNN: 0 minutes, 5 seconds, and 56 milliseconds
+
+Cleaning GPU memory...
+
+Comparing with groundtruth...
+Test accuracy exact KNN (parallel): 99.9803%
+
+Time required to compute distances: 9 minutes, 44 seconds, and 679 milliseconds
+Time required to find the KNN: 5 minutes, 40 seconds, and 419 milliseconds
+Time required to transfer data: 0 minutes, 1 seconds, and 353 milliseconds
+
+--------------- Exact KNN (sequential) ---------------
+Searching...
+
+Comparing with groundtruth...
+Test accuracy exact KNN (sequential): 99.9803%
+
+Time required to compute distances: 14 minutes, 5 seconds, and 780 milliseconds
+Time required to find the KNN: 17 minutes, 25 seconds, and 538 milliseconds
+
+Exact KNN execution time (sequential): 31 minutes, 31 seconds, and 319 milliseconds
+Exact KNN execution time (parallel): 15 minutes, 27 seconds, and 236 milliseconds
+
+Compute distances Speedup: 1.44657
+Find KNN Speedup: 3.07133
+Total Speedup: 2.03974
+
+---------------- Atomic version ----------------
+
+--------------- Exact KNN (parallel) ---------------
+
+Num. batch: 13, batch size: 821 queries per batch
+GPU available memory: 337.00 MB, Total: 8187.50 MB, In use: 7850.50 MB
+
+Launching kernels...
+
+Processing batch 1 (821 queries)...
+Time required to compute distances: 0 minutes, 37 seconds, and 533 milliseconds
+Time required to find the KNN: 0 minutes, 27 seconds, and 715 milliseconds
+
+...
+
+Processing batch 12 (821 queries)...
+Time required to compute distances: 0 minutes, 37 seconds, and 463 milliseconds
+Time required to find the KNN: 0 minutes, 28 seconds, and 101 milliseconds
+
+Processing batch 13 (148 queries)...
+Time required to compute distances: 0 minutes, 6 seconds, and 754 milliseconds
+Time required to find the KNN: 0 minutes, 5 seconds, and 65 milliseconds
+
+Cleaning GPU memory...
+
+Comparing with groundtruth...
+Test accuracy exact KNN (parallel): 51.5685%
+
+Time required to compute distances: 7 minutes, 36 seconds, and 227 milliseconds
+Time required to find the KNN: 5 minutes, 40 seconds, and 22 milliseconds
+Time required to transfer data: 0 minutes, 1 seconds, and 478 milliseconds
+
+--------------- Exact KNN (sequential) ---------------
+Searching...
+
+Comparing with groundtruth...
+Test accuracy exact KNN (sequential): 99.9803%
+
+Time required to compute distances: 14 minutes, 1 seconds, and 758 milliseconds
+Time required to find the KNN: 17 minutes, 23 seconds, and 775 milliseconds
+
+Exact KNN execution time (sequential): 31 minutes, 25 seconds, and 534 milliseconds
+Exact KNN execution time (parallel): 13 minutes, 18 seconds, and 521 milliseconds
+
+Compute distances Speedup: 1.84504
+Find KNN Speedup: 3.06972
+Total Speedup: 2.36128
+
+---------------- One vector per thread version ----------------
+
+--------------- Exact KNN (parallel) ---------------
+
+Num. batch: 13, batch size: 821 queries per batch
+GPU available memory: 337.00 MB, Total: 8187.50 MB, In use: 7850.50 MB
+
+Launching kernels...
+
+Processing batch 1 (821 queries)...
+Time required to compute distances: 0 minutes, 4 seconds, and 403 milliseconds
+Time required to find the KNN: 0 minutes, 27 seconds, and 797 milliseconds
+
+...
+
+Processing batch 12 (821 queries)...
+Time required to compute distances: 0 minutes, 4 seconds, and 537 milliseconds
+Time required to find the KNN: 0 minutes, 28 seconds, and 632 milliseconds
+
+Processing batch 13 (148 queries)...
+Time required to compute distances: 0 minutes, 0 seconds, and 802 milliseconds
+Time required to find the KNN: 0 minutes, 5 seconds, and 149 milliseconds
+
+Cleaning GPU memory...
+
+Comparing with groundtruth...
+Test accuracy exact KNN (parallel): 99.9803%
+
+Time required to compute distances: 0 minutes, 54 seconds, and 787 milliseconds
+Time required to find the KNN: 5 minutes, 44 seconds, and 135 milliseconds
+Time required to transfer data: 0 minutes, 1 seconds, and 488 milliseconds
+
+--------------- Exact KNN (sequential) ---------------
+Searching...
+
+Comparing with groundtruth...
+Test accuracy exact KNN (sequential): 99.9803%
+
+Time required to compute distances: 13 minutes, 34 seconds, and 240 milliseconds
+Time required to find the KNN: 17 minutes, 23 seconds, and 244 milliseconds
+
+Exact KNN execution time (sequential): 30 minutes, 57 seconds, and 484 milliseconds
+Exact KNN execution time (parallel): 6 minutes, 41 seconds, and 201 milliseconds
+
+Compute distances Speedup: 14.8618
+Find KNN Speedup: 3.03149
+Total Speedup: 4.62981
+
